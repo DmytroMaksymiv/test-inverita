@@ -1,0 +1,22 @@
+.picture img {
+    width: 280px;
+}
+
+.picture {
+    text-align: center;
+    position: fixed;
+    top: 180px;
+    left: 950px;
+}
+
+.someText {
+    position: absolute;
+    background: orange;
+    border: 5px solid lightgreen;
+    border-radius: 8px;
+    color: black;
+    padding: 15px;
+    margin: 25px;
+    top: 250px;
+    left: 50px;
+}

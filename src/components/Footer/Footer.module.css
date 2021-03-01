@@ -1,0 +1,9 @@
+.appFooter {
+    grid-area: appFooter;
+    background-color: red;
+}
+
+.center {
+    text-align: center;
+    margin: 15px;
+}

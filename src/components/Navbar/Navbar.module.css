@@ -1,0 +1,26 @@
+.appNav {
+    grid-area: appNav;
+    background-color: lightgreen;
+    padding: 15px;
+}
+
+.item {
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+
+.item a {
+    color: red;
+    text-decoration: none;
+}
+
+.item a.activeLink {
+    color: darkred;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 3px;
+    background-color: orange;
+}
