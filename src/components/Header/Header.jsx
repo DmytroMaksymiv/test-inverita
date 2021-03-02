@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className={s.appHeader}>
             <div className={s.center}>
-                <div><h3>Your idea can change the world</h3></div>
+                <div><h3>Company name</h3></div>
             </div>
         </header>
     );

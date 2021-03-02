@@ -1,16 +1,46 @@
+.lastPage {
+    display: grid;
+
+    grid-template-areas:
+            "firstBlock secondBlock lastBlock";
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-gap: 1px;
+}
+
+.firstBlock {
+    grid-area: firstBlock;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondBlock {
+    grid-area: secondBlock;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastBlock {
+    grid-area: lastBlock;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .picture img {
     width: 280px;
 }
 
 .picture {
     text-align: center;
-    position: fixed;
     top: 180px;
     left: 950px;
 }
 
 .someText {
-    position: absolute;
     background: orange;
     border: 5px solid lightgreen;
     border-radius: 8px;
