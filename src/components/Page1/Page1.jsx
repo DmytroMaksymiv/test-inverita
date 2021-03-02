@@ -1,6 +1,8 @@
 import React from "react";
 import s from "./Page1.module.css";
 import {NavLink} from "react-router-dom";
+import serverUrl from "../../serverUrl";
+
 
 class Page1 extends React.Component {
     constructor(props) {
@@ -16,7 +18,7 @@ class Page1 extends React.Component {
 
     handleSubmit(event) {
         //.log('Отправленное имя:' + this.state.value);
-        fetch('http://localhost:8081/api/user', {
+        fetch(serverUrl + "api/user", {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({name: this.state.value})

@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./Page2.module.css";
 import {NavLink} from "react-router-dom";
+import serverUrl from "../../serverUrl";
 
 class Page2 extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class Page2 extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:8081/api/users")
+        fetch(serverUrl + "api/users")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -36,7 +37,7 @@ class Page2 extends React.Component {
             <div>
                 <div className={s.dataPosition}>
                     <h2>All Users:</h2>
-                    <h3> {this.state.items.map(item => <li>{item.name}</li>)} </h3>
+                    <h3> {this.state.items.map(item => <li key={item.id}> {item.name} </li>)} </h3>
                 </div>
                 <div className="square">
                     <div>
